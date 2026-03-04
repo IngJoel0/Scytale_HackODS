@@ -1,0 +1,66 @@
+---
+title: "matplotlib demo"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 5, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+<!-- comentario -->
+Hola que tal  buenos días esto es una prueba en "Quarto"
+
+(quarto.jpeg)
+
+
+* Shoping List
+  + Bread
+  + Milk
+  + Eggs
+  + Cheese
+    - Cheddar
+    - Mozzarella
+    - Parmesan
+    - Swiss
+  + Beefs
+    - Ground Beef
+    - Steak
+    - Roast Beef
+    - Brisket
+
+display math:
+
+$$E = mc^{2}$$
+
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+<div class="border">
+  <p>This content can be styled with a border</p>
+</div>
+
+>Bloques
