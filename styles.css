@@ -1,0 +1,732 @@
+/* css styles */
+
+:root {
+  --vino: #6d123f;
+  --vino-profundo: #2b0017;
+  --rosa: #d88aa0;
+  --marfil: #efebe2;
+  --blanco: #fffdf8;
+  --sombra: rgba(24, 10, 16, 0.18);
+  --texto: #2b211f;
+  --crema: #f5f1e8;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(180deg, #7a1748 0%, var(--vino) 40%, #581030 100%);
+  color: var(--texto);
+  overflow-x: hidden;
+  font-size: 30px;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+#quarto-content.quarto-container,
+#quarto-content.quarto-container.page-columns,
+#quarto-content.quarto-container.page-layout-full {
+  display: block !important;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+main.content,
+main.content.column-page,
+#quarto-document-content {
+  display: block !important;
+  width: min(96vw, 1700px) !important;
+  max-width: min(96vw, 1700px) !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+body.fullcontent #quarto-content,
+body.fullcontent .quarto-container {
+  width: min(98vw, 2200px);
+  max-width: min(98vw, 2200px);
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+main.content {
+  max-width: none;
+  width: 100%;
+}
+
+#quarto-document-content {
+  width: 100%;
+}
+
+p,
+li,
+blockquote,
+figcaption,
+em,
+strong {
+  font-size: 30px;
+}
+
+.screen-card,
+.screen-note,
+.box,
+.box_,
+.box_column {
+  font-size: 30px;
+}
+
+h1, h2, h3 {
+  background-color: var(--marfil);
+  border-radius: 14px;
+  padding: 15px;
+  color: var(--vino-profundo);
+  box-shadow: 0 12px 26px var(--sombra);
+}
+
+.box,
+.box_ {
+  background-color: var(--marfil);
+  color: var(--texto);
+  padding: 24px 28px;
+  border-radius: 18px;
+  border-left: 6px solid var(--rosa);
+  width: 100%;
+  max-width: none;
+  margin: 0 0 1.5rem 0;
+  box-shadow: 0 18px 40px var(--sombra);
+}
+
+.box_ {
+  padding: 8px 16px;
+}
+
+.box_column {
+  background-color: var(--blanco);
+  color: var(--texto);
+  padding: 24px;
+  border-radius: 18px;
+  border-left: 6px solid var(--rosa);
+  box-shadow: 0 18px 40px var(--sombra);
+}
+
+.columns {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  width: 100%;
+  min-width: 0;
+}
+
+.columns > .column {
+  flex: 1 1 0;
+  max-width: 100%;
+}
+
+.columns > .column[style*="30%"] {
+  flex: 0 0 calc(30% - 1rem);
+  width: calc(30% - 1rem) !important;
+}
+
+.columns > .column[style*="40%"] {
+  flex: 0 0 calc(40% - 1rem);
+  width: calc(40% - 1rem) !important;
+}
+
+.columns > .column[style*="60%"] {
+  flex: 0 0 calc(60% - 1rem);
+  width: calc(60% - 1rem) !important;
+}
+
+.columns > .column[style*="70%"] {
+  flex: 0 0 calc(70% - 1rem);
+  width: calc(70% - 1rem) !important;
+}
+
+.column > .cell {
+  height: 100%;
+}
+
+.column .cell-output-display {
+  background: var(--marfil);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 18px 40px var(--sombra);
+  min-height: 820px;
+  width: 100%;
+}
+
+.column .plotly.html-widget,
+.column .plotly-graph-div {
+  border-radius: 18px;
+  width: 100%;
+}
+
+.column .plotly-graph-div .main-svg {
+  border-radius: 18px;
+}
+
+.js-plotly-plot .plotly .updatemenu-button rect {
+  fill: #c98aa5 !important;
+  stroke: #c98aa5 !important;
+  transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
+.js-plotly-plot .plotly .updatemenu-button text {
+  fill: #fffaf6 !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.js-plotly-plot .plotly .updatemenu-button:hover rect {
+  fill: #8a1e56 !important;
+  stroke: #8a1e56 !important;
+}
+
+.js-plotly-plot .plotly .updatemenu-button.active rect,
+.js-plotly-plot .plotly .updatemenu-button.active:hover rect {
+  fill: #c98aa5 !important;
+  stroke: #c98aa5 !important;
+}
+
+.js-plotly-plot .modebar {
+  background: #f8f3ec !important;
+  border: 1px solid rgba(138, 30, 86, 0.12);
+  border-radius: 6px;
+  box-shadow: 0 8px 22px rgba(168, 6, 82, 0.12);
+  padding: 3px 4px;
+  top: 52px !important;
+  right: 14px !important;
+}
+
+.js-plotly-plot .modebar-group {
+  gap: 2px;
+}
+
+.js-plotly-plot .modebar-btn {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+.js-plotly-plot .modebar-btn path {
+  fill: #c98aa5 !important;
+}
+
+.js-plotly-plot .modebar-btn svg {
+  fill: #c98aa5 !important;
+}
+
+.js-plotly-plot .modebar-btn:hover {
+  background: rgba(138, 30, 86, 0.08) !important;
+}
+
+.js-plotly-plot .modebar-btn:hover path {
+  fill: #c98aa5 !important;
+}
+
+.js-plotly-plot .modebar-btn:hover svg {
+  fill: #c98aa5 !important;
+}
+
+.quarto-figure,
+.cell,
+.cell-output,
+.cell-output-display {
+  width: 100%;
+  max-width: none;
+}
+
+.dashboard-shell {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 1.5rem 1.25rem 4rem;
+  overflow-x: clip;
+}
+
+body:not(.quarto-dashboard) .dashboard-shell,
+body:not(.dashboard) .dashboard-shell {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 1.75rem 0 4rem;
+}
+
+.screen {
+  width: 100%;
+  margin: 0 0 2rem;
+}
+
+.screen-banner,
+.screen-title,
+.screen-hero,
+.screen-note {
+  background: var(--marfil);
+  border-radius: 18px;
+  box-shadow: 0 14px 34px var(--sombra);
+  color: var(--vino-profundo);
+  margin-bottom: 1.4rem;
+}
+
+.screen-banner {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+}
+
+.screen-banner h2,
+.screen-title h2,
+.screen-hero h1,
+.screen-note p {
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+.screen-title {
+  padding: 1rem 1.3rem;
+}
+
+.screen-hero {
+  width: 100%;
+  padding: 1.25rem 2rem;
+}
+
+.screen-hero h1 {
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
+  line-height: 1.12;
+  font-weight: 800;
+}
+
+.screen-card {
+  background: var(--marfil);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px var(--sombra);
+  padding: 1.5rem;
+  color: var(--texto);
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.screen-card p:last-child {
+  margin-bottom: 0;
+}
+
+.screen-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.ods-strip {
+  padding: 0.85rem;
+}
+
+.ods-strip .quarto-figure,
+.ods-strip figure,
+.ods-strip p {
+  margin: 0;
+}
+
+.ods-strip img {
+  display: block;
+  width: 100%;
+  max-width: 624px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.screen-card blockquote {
+  border-left: 4px solid #e7e1da;
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+  color: #4a5968;
+}
+
+.screen-note {
+  padding: 0.8rem 1.2rem;
+}
+
+.screen-end .screen-title,
+.screen-end .screen-hero {
+  max-width: none;
+}
+
+.end-columns {
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.screen-end-panel {
+  background: #f1eadf;
+  border-radius: 0 4rem 4rem 0;
+  box-shadow: none;
+  padding: clamp(2rem, 3vw, 3.4rem) clamp(2rem, 4vw, 4rem);
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 2.15vw, 3rem);
+  line-height: 1.34;
+  letter-spacing: -0.02em;
+  color: #1c0b10;
+}
+
+.screen-end-panel p {
+  margin: 0;
+}
+
+.screen-end-figure {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  overflow: visible;
+}
+
+.screen-end-figure .quarto-figure,
+.screen-end-figure figure,
+.screen-end-figure p {
+  margin: 0;
+}
+
+.screen-end-figure img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  min-height: 0;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
+}
+
+body.dashboard #quarto-dashboard-content {
+  max-width: none;
+  width: 100%;
+}
+
+body.dashboard .navbar,
+body.dashboard .dashboard-nav,
+body.dashboard .bslib-sidebar-layout,
+body.dashboard .dashboard-header,
+body.dashboard .tabset-tab {
+  display: none !important;
+}
+
+body.dashboard .dashboard-page {
+  background: transparent;
+}
+
+body.dashboard .dashboard-main {
+  padding: 0;
+  width: 100%;
+}
+
+body.dashboard .page-columns,
+body.dashboard .quarto-dashboard-content {
+  max-width: none;
+  width: 100%;
+}
+
+body.dashboard .cell-output-display {
+  min-height: unset;
+}
+
+body.dashboard .screen-card .cell-output-display {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+body.dashboard .screen-card .plotly-graph-div {
+  width: 100%;
+}
+
+body.dashboard .main,
+body.dashboard main.content,
+body.dashboard #quarto-content,
+body.dashboard #quarto-dashboard-content {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.screen-banner,
+.screen-title,
+.screen-hero {
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.screen-banner p,
+.screen-title p,
+.screen-hero p,
+.screen-note p {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.screen-banner {
+  font-size: clamp(2rem, 2.4vw, 2.8rem);
+}
+
+.screen-title {
+  font-size: clamp(1.8rem, 2.2vw, 2.6rem);
+}
+
+.screen-hero {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.screen-banner h1,
+.screen-banner h2,
+.screen-banner h3,
+.screen-banner > h1,
+.screen-banner > h2,
+.screen-banner > h3,
+.screen-title h1,
+.screen-title h2,
+.screen-title h3,
+.screen-title > h1,
+.screen-title > h2,
+.screen-title > h3,
+.screen-hero h1,
+.screen-hero h2,
+.screen-hero h3,
+.screen-hero > h1,
+.screen-hero > h2,
+.screen-hero > h3 {
+  display: none;
+}
+
+body.quarto-dashboard,
+body.quarto-dashboard .dashboard-page,
+body.quarto-dashboard .dashboard-page-container,
+body.quarto-dashboard .dashboard-main-container,
+body.quarto-dashboard .dashboard-main,
+body.quarto-dashboard .page-columns,
+body.quarto-dashboard main.content,
+body.quarto-dashboard main.content.column-page,
+body.quarto-dashboard #quarto-document-content,
+body.quarto-dashboard #quarto-content,
+body.quarto-dashboard .dashboard-shell,
+body.quarto-dashboard .dashboard-shell > .screen,
+body.quarto-dashboard .screen-card,
+body.quarto-dashboard .screen-banner,
+body.quarto-dashboard .screen-title,
+body.quarto-dashboard .screen-hero,
+body.quarto-dashboard .screen-note,
+body.quarto-dashboard .bslib-grid,
+body.quarto-dashboard .card.bslib-card,
+body.quarto-dashboard .card-body,
+body.quarto-dashboard .html-fill-item,
+body.quarto-dashboard .html-fill-container,
+body.quarto-dashboard .column,
+body.quarto-dashboard .columns {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+}
+
+body.quarto-dashboard main.content.column-page,
+body.quarto-dashboard #quarto-document-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+}
+
+body.quarto-dashboard .dashboard-shell {
+  padding: 1.75rem 1.75rem 4rem;
+}
+
+body:not(.quarto-dashboard) .screen,
+body:not(.dashboard) .screen,
+body:not(.quarto-dashboard) .screen-card,
+body:not(.dashboard) .screen-card,
+body:not(.quarto-dashboard) .screen-banner,
+body:not(.dashboard) .screen-banner,
+body:not(.quarto-dashboard) .screen-title,
+body:not(.dashboard) .screen-title,
+body:not(.quarto-dashboard) .screen-hero,
+body:not(.dashboard) .screen-hero,
+body:not(.quarto-dashboard) .screen-note,
+body:not(.dashboard) .screen-note {
+  width: 100%;
+  max-width: none;
+}
+
+main.content,
+#quarto-content,
+#quarto-document-content,
+.screen,
+.screen-card,
+.cell-output-display,
+.js-plotly-plot,
+.plotly-graph-div {
+  max-width: 100%;
+}
+
+.screen-card .js-plotly-plot,
+.screen-card .plotly-graph-div {
+  min-width: 0 !important;
+}
+
+body.quarto-dashboard .card.bslib-card,
+body.quarto-dashboard .card-body,
+body.quarto-dashboard .screen-card {
+  overflow: visible !important;
+}
+
+body.quarto-dashboard .dashboard-shell > .screen {
+  display: block !important;
+}
+
+body.quarto-dashboard .screen-cover .screen-card .bslib-grid {
+  display: block !important;
+}
+
+body.quarto-dashboard .screen-cover .screen-card .card.bslib-card {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 1500px) {
+  main.content,
+  main.content.column-page,
+  #quarto-document-content {
+    width: min(97vw, 1400px) !important;
+    max-width: min(97vw, 1400px) !important;
+  }
+
+  .screen-banner {
+    font-size: clamp(1.55rem, 2vw, 2.2rem);
+  }
+
+  .screen-title {
+    font-size: clamp(1.45rem, 1.9vw, 2rem);
+  }
+
+  .screen-hero {
+    font-size: clamp(2rem, 3vw, 3rem);
+    padding: 1.1rem 1.2rem;
+  }
+}
+
+@media (max-width: 1420px) {
+  .columns {
+    gap: 1.25rem;
+  }
+
+  .column[style*="60%"],
+  .column[style*="40%"],
+  .column[style*="70%"],
+  .column[style*="30%"] {
+    width: 100% !important;
+    flex: 0 0 100%;
+  }
+
+  .screen-card {
+    padding: 1.15rem;
+  }
+
+  .screen-title {
+    padding: 0.95rem 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #quarto-content.quarto-container,
+  #quarto-content.quarto-container.page-columns,
+  #quarto-content.quarto-container.page-layout-full {
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+
+  main.content,
+  main.content.column-page,
+  #quarto-document-content {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding-left: 0.85rem !important;
+    padding-right: 0.85rem !important;
+  }
+
+  .columns {
+    gap: 1rem;
+  }
+
+  .column .cell-output-display {
+    min-height: 620px;
+    padding: 12px;
+  }
+
+  .dashboard-shell {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .screen-banner,
+  .screen-hero {
+    max-width: none;
+  }
+
+  .screen-banner,
+  .screen-title {
+    font-size: clamp(1.2rem, 5vw, 1.7rem);
+  }
+
+  .screen-hero {
+    font-size: clamp(1.55rem, 7vw, 2.3rem);
+    line-height: 1.08;
+  }
+
+  .screen-card {
+    padding: 1rem;
+  }
+
+  .screen-card .cell-output-display {
+    overflow-x: auto;
+  }
+
+  .js-plotly-plot .modebar {
+    top: 44px !important;
+    right: 10px !important;
+    transform: scale(0.92);
+    transform-origin: top right;
+  }
+
+  .screen-end-panel {
+    border-radius: 2rem;
+    min-height: auto;
+    font-size: clamp(1.15rem, 4.4vw, 1.7rem);
+    line-height: 1.42;
+    padding: 1.4rem 1.2rem;
+  }
+
+  .screen-end-figure img {
+    max-width: 220px;
+  }
+}

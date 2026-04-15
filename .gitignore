@@ -1,0 +1,12 @@
+/.quarto/
+**/*.quarto_ipynb
+
+/.venv/
+**/*.venv
+
+/_site/
+**/*._site
+
+/posts/
+**/*.posts
+# 
