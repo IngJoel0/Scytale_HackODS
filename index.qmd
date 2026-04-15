@@ -62,9 +62,9 @@ El conocimiento como escape en México
 
 ### HACE AÑOS EN LA NUEVA ESPAÑA
 
-"Sor Juana nació en un mundo donde la educación no era un derecho, hoy siglos después".... **¿Realmente es diferente?**
+Sor Juana nació en un mundo donde la educación no era un derecho, hoy siglos después.... **¿Realmente es diferente?**
 
-Sor Juana Inés de la Cruz no tenía acceso a educación formal, pero insistió. Por que incluso sin datos, ya sabía algo que ho sí podemos demostrar: Sin educación, las oportunidades no existen.
+Sor Juana Inés de la Cruz no tenía acceso a educación formal, pero insistió. Por que incluso sin datos, ya sabía algo que hoy sí podemos demostrar: Sin educación, las oportunidades no existen.
 :::
 
 ::: {.screen-card .ods-strip .text-center}
@@ -304,7 +304,7 @@ En México, la lengua materna es el español. Sin embargo, el dominio de otros i
 ::: {.screen}
 
 ::: {.screen-title}
-Se armó de constancia y disciplina, a tal grado que, niña aún, se abstuvo de comer queso, puesto que había oído “que entontecía a las personas”
+Se armó de constancia y disciplina, a tal grado que, niña aún, evitó comer queso, puesto que había oído “que entontecía a las personas”
 :::
 
 :::: {.columns}
@@ -527,7 +527,7 @@ fig
 ::: {.screen}
 
 ::: {.screen-title}
-Sor Juana trabajaba. Convirtió el conocimiento en valor a través de sus mecenas, quienes fueron principalmente virreinas de la Nueva España que financiaron y promovieron la obra de la poetisa.
+Sor Juana trabajaba. Convirtió el conocimiento en valor a través de sus mecenas, quienes fueron principalmente virreinas de la Nueva España que financiaron su obra.
 :::
 
 :::: {.columns}
